@@ -37,4 +37,4 @@ Sabemos que o tempo pode ser curto e entendemos que você pode não conseguir fi
 
 ## Envio
 
-Envie o link do repositório público para [email de contato da Russel Serviços] com o assunto "Teste de Front-End - [Seu Nome]".
+Envie o link do repositório público para [admin@russelservico.com.br] com o assunto "Teste de Front-End - [Seu Nome]".
