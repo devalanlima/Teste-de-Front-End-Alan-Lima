@@ -1,4 +1,4 @@
-# Teste de Boas-Vindas para Desenvolvedor Front-End - Russel Serviços
+# Teste para Desenvolvedor Front-End - Russel Serviços
 
 Bem-vindo ao teste de habilidades de desenvolvimento front-end da Russel Serviços! Este teste visa avaliar suas habilidades técnicas e a forma como você resolve problemas comuns de front-end.
 
