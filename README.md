@@ -26,13 +26,11 @@ Sabemos que o tempo pode ser curto e entendemos que você pode não conseguir fi
 1. Fidelidade ao Design: A interface deve ser exatamente igual ao protótipo fornecido no Figma. Espaçamentos, versão desktop e mobile.
 1. Interação entre Páginas: As páginas devem ter interações entre si, conforme o fluxo definido no Figma.
 1. Funcionalidade dos Botões: Todos os botões devem estar funcionando e encaminhar para os produtos ou páginas corretas.
-1. Responsividade: A aplicação deve ser responsiva.
-1. Boas Práticas: Utilize boas práticas de desenvolvimento,nome de varial compreencivel, codigo limpo e bem documentado.
 
 ### Extras (Opcional)
 
 - Responsividade: Garantir que a aplicação seja responsiva.
-- Boas Práticas: Utilize boas práticas de desenvolvimento, incluindo organização de código e documentação básica.
+- Boas Práticas: Boas Práticas: Utilize boas práticas de desenvolvimento,nome de varial compreensível, codigo limpo e bem documentado.
 
 
 ## Envio
