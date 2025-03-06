@@ -18,7 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={`${DMSans.className} bg-background`}>{children}</body>
+      <body className={`${DMSans.className} bg-background text-text`}>
+        {children}
+      </body>
     </html>
   );
 }
