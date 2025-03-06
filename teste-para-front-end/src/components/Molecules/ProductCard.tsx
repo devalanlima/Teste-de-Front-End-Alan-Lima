@@ -1,24 +1,26 @@
 import Image from "next/image";
 import Card from "../Atoms/Card";
 import Button from "../Atoms/Button";
+import { Product } from "@/types/Product";
+import Link from "next/link";
 
 interface Props {
-  productName: string;
-  imageURL: string;
-  previousPrice?: string;
-  price: string;
-  info?: string;
+  product: Product;
   buttonName?: string;
 }
 
 export default function ProductCard({
-  productName,
-  imageURL,
-  price = "00,00",
-  previousPrice,
-  info,
+  product,
   buttonName = "COMPRAR",
 }: Props) {
+  const {
+    productName,
+    imageURL,
+    price = "00,00",
+    previousPrice,
+    info,
+  } = product;
+
   return (
     <Card className="flex flex-col text-text gap-6 w-fit">
       <Image
@@ -45,7 +47,9 @@ export default function ProductCard({
           </p>
         )}
       </div>
-      <Button className="w-[132px] xs:w-[200px]">{buttonName}</Button>
+      <Link href={`/product/${product.id}`}>
+        <Button className="w-full">{buttonName}</Button>
+      </Link>
     </Card>
   );
 }

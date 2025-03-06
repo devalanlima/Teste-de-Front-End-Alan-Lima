@@ -2,22 +2,20 @@ import Image from "next/image";
 import Card from "../Atoms/Card";
 import Button from "../Atoms/Button";
 import LogitechBadge from "../Atoms/LogitechBadge";
+import { Product } from "@/types/Product";
+import Link from "next/link";
 
 interface Props {
-  productName: string;
-  imageURL: string;
-  previousPrice?: string;
-  price: string;
+  product: Product;
   buttonName?: string;
 }
 
 export default function ProductCardLogitech({
-  productName,
-  imageURL,
-  price = "00,00",
-  previousPrice,
+  product,
   buttonName = "COMPRAR",
 }: Props) {
+  const { productName, imageURL, price = "00,00", previousPrice } = product;
+
   return (
     <Card
       variant="logitech"
@@ -27,7 +25,7 @@ export default function ProductCardLogitech({
         className="w-full min-w-[132px] xs:min-w-[262px] h-auto rounded-sm"
         alt={productName}
         src={imageURL}
-        width={262}
+        width={252}
         height={200}
       />
       <LogitechBadge />
@@ -46,9 +44,11 @@ export default function ProductCardLogitech({
           R$ {price}
         </p>
       </div>
-      <Button variant="logitech" className="w-full">
-        {buttonName}
-      </Button>
+      <Link href={`/product/${product.id}`}>
+        <Button variant="logitech" className="w-full">
+          {buttonName}
+        </Button>
+      </Link>
     </Card>
   );
 }
